@@ -1,0 +1,100 @@
+{
+  "summary": {
+    "total_samples": 4041,
+    "overall_wer": 1.1619183053008386,
+    "overall_cer": 1.0054603795829813,
+    "wer_mean": 1.1617795070491466,
+    "wer_std": 0.014979648173603779,
+    "wer_ci_low": 1.1350634367200507,
+    "wer_ci_high": 1.1927860519176003,
+    "cer_mean": 1.0053566386265234,
+    "cer_std": 0.014568382731318358,
+    "cer_ci_low": 0.9789818565535768,
+    "cer_ci_high": 1.0351203849296278,
+    "char_precision": 0.577134049266217,
+    "char_recall": 0.484676297030064,
+    "char_f1": 0.526879766926408,
+    "char_precision_mean": 0.4142926742879505,
+    "char_precision_std": 0.004881226564689856,
+    "char_precision_ci_low": 0.40500342791543437,
+    "char_precision_ci_high": 0.4240758172384728,
+    "char_recall_mean": 0.323230725692565,
+    "char_recall_std": 0.003947378725266438,
+    "char_recall_ci_low": 0.31553757683697053,
+    "char_recall_ci_high": 0.33101667714332683,
+    "char_f1_mean": 0.33319740059170566,
+    "char_f1_std": 0.003913936325050422,
+    "char_f1_ci_low": 0.3255360085108347,
+    "char_f1_ci_high": 0.3411249252386602,
+    "word_precision": 0.16307978863401695,
+    "word_recall": 0.13166282547933114,
+    "word_f1": 0.14569692146293817,
+    "word_precision_mean": 0.04901474879284784,
+    "word_precision_std": 0.0018756054050006051,
+    "word_precision_ci_low": 0.045295317853660436,
+    "word_precision_ci_high": 0.052642183867621366,
+    "word_recall_mean": 0.04018662365148615,
+    "word_recall_std": 0.0016089883970491212,
+    "word_recall_ci_low": 0.03709431205888076,
+    "word_recall_ci_high": 0.043328743364693244,
+    "word_f1_mean": 0.041859069703433664,
+    "word_f1_std": 0.0016349385008818172,
+    "word_f1_ci_low": 0.038699606230720086,
+    "word_f1_ci_high": 0.04504538283073262,
+    "latency_mean_sec": 5.229915050134494,
+    "latency_std_sec": 0.08890294524874112,
+    "latency_ci_low": 5.050828335073746,
+    "latency_ci_high": 5.409699700769443,
+    "total_inference_time_sec": 21558.425171613693,
+    "throughput_samples_per_sec": 0.18744411838211847
+  },
+  "confidence_intervals": {
+    "overall": {
+      "wer": 1.1617795070491466,
+      "wer_ci_lower": 1.1350634367200507,
+      "wer_ci_upper": 1.1927860519176003,
+      "cer": 1.0053566386265234,
+      "cer_ci_lower": 0.9789818565535768,
+      "cer_ci_upper": 1.0351203849296278,
+      "total_samples": 4041
+    },
+    "per_language": {
+      "Assamese": {
+        "wer": 1.1934409112508921,
+        "wer_ci_lower": 1.1249097520263946,
+        "wer_ci_upper": 1.2748616420432275,
+        "cer": 1.106231858733047,
+        "cer_ci_lower": 1.0390928468270684,
+        "cer_ci_upper": 1.184449495476524,
+        "total_samples": 972
+      },
+      "Bengali": {
+        "wer": 1.090614007007894,
+        "wer_ci_lower": 1.0492430429677952,
+        "wer_ci_upper": 1.1460807853139132,
+        "cer": 0.9570921640136497,
+        "cer_ci_lower": 0.9165880553128399,
+        "cer_ci_upper": 1.005099311544552,
+        "total_samples": 945
+      },
+      "Hindi": {
+        "wer": 1.1589496124456904,
+        "wer_ci_lower": 1.0995167722843862,
+        "wer_ci_upper": 1.220138959339923,
+        "cer": 0.9588416671525363,
+        "cer_ci_lower": 0.8996754216978193,
+        "cer_ci_upper": 1.019517587427787,
+        "total_samples": 1161
+      },
+      "Odia": {
+        "wer": 1.211055922460883,
+        "wer_ci_lower": 1.1654287304110835,
+        "wer_ci_upper": 1.2565509689667635,
+        "cer": 0.9955002128438221,
+        "cer_ci_lower": 0.9572368903883085,
+        "cer_ci_upper": 1.0386431476421936,
+        "total_samples": 963
+      }
+    }
+  }
+}

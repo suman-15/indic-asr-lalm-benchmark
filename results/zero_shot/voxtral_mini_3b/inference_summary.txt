@@ -1,0 +1,55 @@
+Voxtral-Mini-3B-2507 Vanilla Zero-Shot Inference Summary
+======================================================================
+
+Model: mistralai/Voxtral-Mini-3B-2507
+Adapter: NONE (vanilla zero-shot)
+Data root: /path/to/data/IndicVoices_subset_4lang_combined
+Split: test
+Total samples loaded: 4041
+Total samples evaluated: 4041
+Batch size: 2
+Random seed: 42
+Text normalization: True
+Bootstrap samples: 2000
+
+Overall Metrics
+----------------------------------------
+WER: 1.6385 (aggregate)
+CER: 1.4301 (aggregate)
+WER Bootstrap: 1.6406 ± 0.0478 (95% CI: [1.5523, 1.7374])
+CER Bootstrap: 1.4321 ± 0.0444 (95% CI: [1.3493, 1.5213])
+Char Precision / Recall / F1: 0.4943 / 0.5093 / 0.4807
+Word Precision / Recall / F1: 0.2254 / 0.2109 / 0.2145
+
+Per-Language Results
+----------------------------------------
+
+Assamese (as, n=972):
+  WER: 2.8728 (aggregate)
+  CER: 2.5048 (aggregate)
+  Char Precision / Recall / F1: 0.2769 / 0.3396 / 0.2740
+  Word Precision / Recall / F1: 0.0283 / 0.0312 / 0.0276
+
+Bengali (bn, n=945):
+  WER: 0.8959 (aggregate)
+  CER: 0.5999 (aggregate)
+  Char Precision / Recall / F1: 0.7778 / 0.7280 / 0.7345
+  Word Precision / Recall / F1: 0.3505 / 0.3167 / 0.3272
+
+Hindi (hi, n=1161):
+  WER: 0.8647 (aggregate)
+  CER: 0.6719 (aggregate)
+  Char Precision / Recall / F1: 0.7603 / 0.7622 / 0.7439
+  Word Precision / Recall / F1: 0.4750 / 0.4487 / 0.4564
+
+Odia (or, n=963):
+  WER: 2.1986 (aggregate)
+  CER: 1.9463 (aggregate)
+  Char Precision / Recall / F1: 0.1157 / 0.1609 / 0.1232
+  Word Precision / Recall / F1: 0.0017 / 0.0024 / 0.0019
+
+Inference Time
+----------------------------------------
+Total: 3.6097 hours
+Throughput: 0.3110 samples/sec
+Mean latency: 3.1507s ± 0.0710s

@@ -1,0 +1,48 @@
+Qwen2-Audio LoRA Inference Summary
+============================================================
+
+Model: Qwen/Qwen2-Audio-7B-Instruct + LoRA(qwen2_audio_lora_indic)
+Total samples: 4041
+Bootstrap samples: 2000
+
+Overall Metrics (Aggregate):
+----------------------------------------
+WER: 0.4049
+WER Bootstrap: 0.4049 ± 0.0042 (95% CI: [0.3968, 0.4132])
+CER: 0.1793
+CER Bootstrap: 0.1793 ± 0.0030 (95% CI: [0.1736, 0.1854])
+Char F1: 0.8751 ± 0.0020 (95% CI: [0.8712, 0.8790])
+Word F1: 0.6033 ± 0.0038 (95% CI: [0.5958, 0.6107])
+
+Per-Language Results:
+----------------------------------------
+
+Assamese (n=972):
+  WER: 0.4438 (aggregate)
+  CER: 0.1930 (aggregate)
+  Char F1: 0.8643 ± 0.0044
+  Word F1: 0.5732 ± 0.0078
+
+Bengali (n=945):
+  WER: 0.3327 (aggregate)
+  CER: 0.1381 (aggregate)
+  Char F1: 0.9046 ± 0.0035
+  Word F1: 0.6703 ± 0.0076
+
+Hindi (n=1161):
+  WER: 0.3961 (aggregate)
+  CER: 0.2106 (aggregate)
+  Char F1: 0.8455 ± 0.0048
+  Word F1: 0.6016 ± 0.0082
+
+Odia (n=963):
+  WER: 0.4570 (aggregate)
+  CER: 0.1774 (aggregate)
+  Char F1: 0.8924 ± 0.0026
+  Word F1: 0.5694 ± 0.0066
+
+Inference Time:
+----------------------------------------
+Total: 10.44 hours
+Per-sample latency: 9.2491s ± 0.1106s
+Throughput: 0.11 samples/sec

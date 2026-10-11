@@ -1,0 +1,64 @@
+Vanilla Qwen3-ASR-1.7B Zero-Shot Inference Summary
+======================================================================
+
+Model: Qwen/Qwen3-ASR-1.7B
+Inference type: zero_shot_vanilla
+Data dir: /path/to/data/IndicVoices_subset_4lang_combined/test
+Total samples: 4041
+Batch size: 2
+Full audio clips used: True
+Text normalization: True
+4-bit quantization: True
+Attention implementation: flash_attention_2
+Bootstrap samples: 2000
+
+Overall Metrics (Aggregate WER/CER; sample-mean P/R/F1):
+--------------------------------------------------
+WER: 0.936612
+WER Bootstrap: 0.936694 ± 0.008181 (95% CI: [0.921371, 0.952857])
+CER: 0.763779
+CER Bootstrap: 0.763727 ± 0.006605 (95% CI: [0.751254, 0.776605])
+Char Precision: 0.350203 ± 0.005446 (95% CI: [0.339522, 0.360623])
+Char Recall: 0.328348 ± 0.005110 (95% CI: [0.318530, 0.338145])
+Char F1: 0.336126 ± 0.005233 (95% CI: [0.325938, 0.346166])
+Word Precision: 0.190557 ± 0.005188 (95% CI: [0.180236, 0.200650])
+Word Recall: 0.178971 ± 0.004926 (95% CI: [0.169070, 0.188379])
+Word F1: 0.183658 ± 0.005023 (95% CI: [0.173515, 0.193322])
+
+Overall Edit Counts:
+--------------------------------------------------
+WER substitutions/deletions/insertions/hits: 43303/5923/8075/11953
+CER substitutions/deletions/insertions/hits: 181151/49510/20697/98437
+
+Per-Language Results:
+--------------------------------------------------
+
+Assamese (n=972):
+  WER: 1.201621 (aggregate)
+  CER: 0.949473 (aggregate)
+  Char Precision/Recall/F1: 0.143847/0.135934/0.137950
+  Word Precision/Recall/F1: 0.000576/0.000560/0.000567
+
+Bengali (n=945):
+  WER: 1.090754 (aggregate)
+  CER: 0.874722 (aggregate)
+  Char Precision/Recall/F1: 0.193566/0.179265/0.184082
+  Word Precision/Recall/F1: 0.030835/0.029093/0.029739
+
+Hindi (n=1161):
+  WER: 0.381640 (aggregate)
+  CER: 0.237543 (aggregate)
+  Char Precision/Recall/F1: 0.821678/0.762938/0.786641
+  Word Precision/Recall/F1: 0.638129/0.599084/0.614938
+
+Odia (n=963):
+  WER: 1.223931 (aggregate)
+  CER: 0.979718 (aggregate)
+  Char Precision/Recall/F1: 0.144711/0.145514/0.142930
+  Word Precision/Recall/F1: 0.000000/0.000000/0.000000
+
+Inference Time:
+--------------------------------------------------
+Total: 5.9684 hours
+Per-sample latency: 4.889056s ± 3.174435s
+Throughput: 0.188073 samples/sec

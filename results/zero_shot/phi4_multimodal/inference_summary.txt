@@ -1,0 +1,36 @@
+Phi-4-Multimodal-Instruct Vanilla Zero-Shot Inference Summary
+======================================================================
+
+Model: microsoft/Phi-4-multimodal-instruct (vanilla zero-shot)
+Data Dir: /path/to/data/IndicVoices_subset_4lang_combined/test
+Total samples processed: 4041
+Batch size: 2
+Random seed: 42
+Full audio clip used: True
+Prompt mode: language_specific
+Max new tokens cap: 256
+Repetition penalty: 1.0
+Bootstrap samples: 2000
+
+Overall Metrics
+----------------------------------------
+Aggregate WER: 1.589009
+WER Bootstrap: 1.588770 ± 0.020911 (95% CI: [1.549539, 1.630297])
+Aggregate CER: 1.345259
+CER Bootstrap: 1.344922 ± 0.015717 (95% CI: [1.314444, 1.377192])
+Char Precision: 0.241276
+Char Recall: 0.237289
+Char F1: 0.218400
+Word Precision: 0.022953
+Word Recall: 0.018047
+Word F1: 0.017999
+Latency/sample: 5.722551s
+Total inference time: 23820.75s
+Throughput: 0.169642 samples/sec
+
+Per-Language Results
+----------------------------------------
+Assamese (n=972): WER=1.469179, CER=1.339545, CharP=0.129278, CharR=0.128909, CharF1=0.117561, WordP=0.002303, WordR=0.001447, WordF1=0.001367
+Bengali (n=945): WER=1.569997, CER=1.384229, CharP=0.251684, CharR=0.258426, CharF1=0.233626, WordP=0.018110, WordR=0.014883, WordF1=0.014392
+Hindi (n=1161): WER=1.800907, CER=1.397679, CharP=0.447452, CharR=0.419823, CharF1=0.392440, WordP=0.063117, WordR=0.049380, WordF1=0.049680
+Odia (n=963): WER=1.453982, CER=1.256036, CharP=0.095184, CharR=0.105644, CharF1=0.095108, WordP=0.000054, WordR=0.000079, WordF1=0.000064

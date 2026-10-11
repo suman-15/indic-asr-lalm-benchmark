@@ -1,0 +1,2 @@
+scope,n_files,micro_cer,micro_wer,char_precision,char_recall,char_f1,word_precision,word_recall,word_f1,empty_count,very_short_count,elapsed_sec
+overall,4041,0.295171,0.485657,0.890169,0.806331,0.846179,0.631716,0.579251,0.604347,0,0,4091.6

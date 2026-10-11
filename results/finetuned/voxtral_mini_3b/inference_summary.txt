@@ -1,0 +1,34 @@
+======================================================================
+Voxtral-Mini-3B-2507 (+ LoRA)  |  IndicVoices TEST inference
+======================================================================
+Base model:   mistralai/Voxtral-Mini-3B-2507
+Adapter dir:  /path/to/data/IndicVoices_subset_4lang_combined/voxtral_lora_indic_v3/final_model
+Total samples: 4041
+
+OVERALL (95% bootstrap CI)
+  WER: 0.4067  [0.3979, 0.4156]
+  CER: 0.2079  [0.2012, 0.2146]
+  char P/R/F1: 0.8670 / 0.8273 / 0.8430
+  word P/R/F1: 0.5850 / 0.5760 / 0.5786
+
+PER LANGUAGE
+  [as] Assamese  (n=972)
+     WER: 0.5498  [0.5334, 0.5669]
+     CER: 0.2755  [0.2604, 0.2954]
+     char P/R/F1: 0.8295 / 0.7938 / 0.8077
+     word P/R/F1: 0.4707 / 0.4708 / 0.4688
+  [bn] Bengali  (n=945)
+     WER: 0.2929  [0.2802, 0.3056]
+     CER: 0.1392  [0.1300, 0.1483]
+     char P/R/F1: 0.8981 / 0.8658 / 0.8792
+     word P/R/F1: 0.6901 / 0.6818 / 0.6844
+  [hi] Hindi  (n=1161)
+     WER: 0.2725  [0.2608, 0.2846]
+     CER: 0.1475  [0.1389, 0.1568]
+     char P/R/F1: 0.8562 / 0.8270 / 0.8375
+     word P/R/F1: 0.6728 / 0.6586 / 0.6638
+  [or] Odia  (n=963)
+     WER: 0.5635  [0.5502, 0.5771]
+     CER: 0.2710  [0.2599, 0.2836]
+     char P/R/F1: 0.8871 / 0.8231 / 0.8495
+     word P/R/F1: 0.4912 / 0.4794 / 0.4825

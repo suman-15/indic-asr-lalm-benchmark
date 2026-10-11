@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.wav
+*.flac
+*.safetensors
+*.bin
+*.pt
+checkpoints/

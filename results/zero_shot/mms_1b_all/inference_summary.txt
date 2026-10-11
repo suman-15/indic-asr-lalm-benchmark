@@ -1,0 +1,59 @@
+Vanilla Facebook MMS-1B-All Zero-Shot Inference Summary
+======================================================================
+
+Model: facebook/mms-1b-all zero-shot
+Total samples: 4041
+Batch size: 2
+Full audio clips: True
+Bootstrap samples: 2000
+Text normalization: True
+
+Language adapter mapping:
+  Assamese: asm
+  Bengali: ben
+  Hindi: hin
+  Odia: ory
+
+Overall Metrics (Aggregate):
+----------------------------------------
+WER: 0.4945
+WER Bootstrap: 0.4945 ± 0.0039 (95% CI: [0.4871, 0.5023])
+CER: 0.1974
+CER Bootstrap: 0.1974 ± 0.0025 (95% CI: [0.1926, 0.2026])
+Char Precision/Recall/F1: 0.9053/0.8206/0.8609
+Word Precision/Recall/F1: 0.5770/0.5237/0.5490
+Char F1 Bootstrap Mean: 0.7820 ± 0.0037 (95% CI: [0.7749, 0.7892])
+Word F1 Bootstrap Mean: 0.4609 ± 0.0043 (95% CI: [0.4520, 0.4694])
+
+Per-Language Results:
+----------------------------------------
+
+Assamese (n=972, MMS=asm):
+  WER: 0.5105 (aggregate)
+  CER: 0.1989 (aggregate)
+  Char P/R/F1: 0.9127/0.8147/0.8609
+  Word P/R/F1: 0.5687/0.5084/0.5369
+
+Bengali (n=945, MMS=ben):
+  WER: 0.4090 (aggregate)
+  CER: 0.1561 (aggregate)
+  Char P/R/F1: 0.9290/0.8567/0.8914
+  Word P/R/F1: 0.6474/0.6042/0.6251
+
+Hindi (n=1161, MMS=hin):
+  WER: 0.4868 (aggregate)
+  CER: 0.2322 (aggregate)
+  Char P/R/F1: 0.8830/0.7875/0.8325
+  Word P/R/F1: 0.5969/0.5310/0.5621
+
+Odia (n=963, MMS=ory):
+  WER: 0.5849 (aggregate)
+  CER: 0.2053 (aggregate)
+  Char P/R/F1: 0.8940/0.8215/0.8562
+  Word P/R/F1: 0.4778/0.4385/0.4573
+
+Inference Time:
+----------------------------------------
+Total: 0.61 hours
+Per-sample latency: 0.5265s ± 0.2356s
+Throughput: 1.84 samples/sec

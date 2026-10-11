@@ -1,0 +1,6 @@
+# Analysis scripts (analysis/*.py)
+numpy
+pandas
+# Training and inference scripts additionally use (exact versions were not recorded):
+# torch, transformers, peft, bitsandbytes, accelerate, soundfile, scipy, jiwer, tqdm, matplotlib
+# Qwen3-ASR uses the qwen_asr package; IndicConformer uses the model's remote code on Hugging Face.

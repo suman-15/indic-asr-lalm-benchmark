@@ -1,0 +1,47 @@
+Vanilla Whisper Large-v3 Zero-Shot Inference Summary
+======================================================================
+
+Model: openai/whisper-large-v3
+Data Dir: /path/to/data/IndicVoices_subset_4lang_combined/test
+CSV: test.csv
+Total samples processed: 4041
+Batch size: 2
+Random seed: 42
+Full clips, no chunking: True
+MAX_AUDIO_SECONDS: 30
+Text normalization: True
+4-bit inference: True
+Bootstrap samples: 2000
+Elapsed seconds: 44811.56
+
+Overall Metrics (Aggregate)
+----------------------------------------
+WER: 0.851910
+WER Bootstrap: 0.851910 ± 0.012787 (95% CI: [0.827849, 0.877592])
+CER: 0.677856
+CER Bootstrap: 0.677856 ± 0.010693 (95% CI: [0.657866, 0.700005])
+Char Precision: 0.454323
+Char Recall: 0.413169
+Char F1: 0.432770
+Word Precision: 0.270336
+Word Recall: 0.256886
+Word F1: 0.263439
+
+Per-Language Results
+----------------------------------------
+Assamese (n=972): WER=1.305305, CER=1.066183, WordF1=0.000000, CharF1=0.113947
+Bengali (n=945): WER=0.773638, CER=0.471913, WordF1=0.311441, CharF1=0.660720
+Hindi (n=1161): WER=0.395695, CER=0.217490, WordF1=0.650471, CharF1=0.845076
+Odia (n=963): WER=1.067926, CER=0.952168, WordF1=0.000000, CharF1=0.121664
+
+Generated Files
+----------------------------------------
+/path/to/data/IndicVoices_subset_4lang_combined/whisper_large_v3_zero_shot_inference_results/results_detailed.csv
+/path/to/data/IndicVoices_subset_4lang_combined/whisper_large_v3_zero_shot_inference_results/per_language_results.csv
+/path/to/data/IndicVoices_subset_4lang_combined/whisper_large_v3_zero_shot_inference_results/error_analysis.csv
+/path/to/data/IndicVoices_subset_4lang_combined/whisper_large_v3_zero_shot_inference_results/inference_summary.txt
+/path/to/data/IndicVoices_subset_4lang_combined/whisper_large_v3_zero_shot_inference_results/metrics_summary_with_ci.csv
+/path/to/data/IndicVoices_subset_4lang_combined/whisper_large_v3_zero_shot_inference_results/metrics_summary.json
+/path/to/data/IndicVoices_subset_4lang_combined/whisper_large_v3_zero_shot_inference_results/inference_metrics.png
+/path/to/data/IndicVoices_subset_4lang_combined/whisper_large_v3_zero_shot_inference_results/wer_vs_cer_scatter.png
+/path/to/data/IndicVoices_subset_4lang_combined/whisper_large_v3_zero_shot_inference_results/confidence_intervals.png

@@ -1,0 +1,56 @@
+Qwen2-Audio Vanilla Zero-Shot Inference Summary
+============================================================
+
+Model: Qwen/Qwen2-Audio-7B-Instruct
+Dataset split: test
+Data dir: /path/to/data/IndicVoices_subset_4lang_combined/test
+Output dir: /path/to/data/IndicVoices_subset_4lang_combined/qwen2_audio_zero_shot_inference_results
+Batch size: 4
+Random seed: 42
+Load in 4-bit: True
+Attention backend: flash_attention_2
+Audio tower FA2 mask bypass: True
+Run warmup: True
+Max audio seconds: 60
+Text normalization: True
+Bootstrap samples: 2000
+
+Overall Results
+------------------------------------------------------------
+Total samples: 4041
+WER: 1.161918
+WER bootstrap mean/std/CI: 1.161780 ± 0.014980 [1.135063, 1.192786]
+CER: 1.005460
+CER bootstrap mean/std/CI: 1.005357 ± 0.014568 [0.978982, 1.035120]
+Char Precision/Recall/F1: 0.577134 / 0.484676 / 0.526880
+Word Precision/Recall/F1: 0.163080 / 0.131663 / 0.145697
+Latency mean: 5.229915 sec/sample
+Total inference time: 21558.43 sec
+Throughput: 0.1874 samples/sec
+
+Per-Language Results
+------------------------------------------------------------
+
+Assamese (n=972)
+  WER: 1.193586
+  CER: 1.106446
+  Char Precision/Recall/F1: 0.239327 / 0.178044 / 0.204186
+  Word Precision/Recall/F1: 0.012538 / 0.008935 / 0.010434
+
+Bengali (n=945)
+  WER: 1.091737
+  CER: 0.958127
+  Char Precision/Recall/F1: 0.505637 / 0.326519 / 0.396800
+  Word Precision/Recall/F1: 0.099531 / 0.061158 / 0.075762
+
+Hindi (n=1161)
+  WER: 1.159031
+  CER: 0.958935
+  Char Precision/Recall/F1: 0.801700 / 0.845323 / 0.822933
+  Word Precision/Recall/F1: 0.350863 / 0.349989 / 0.350425
+
+Odia (n=963)
+  WER: 1.211689
+  CER: 0.995721
+  Char Precision/Recall/F1: 0.592265 / 0.553168 / 0.572050
+  Word Precision/Recall/F1: 0.031386 / 0.027394 / 0.029255
