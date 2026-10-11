@@ -41,9 +41,11 @@ Corpus WER is `sum(WER_i * N_i) / sum(N_i)`, where `N_i` is the number of refere
 
 We use a four-language subset of [IndicVoices](https://huggingface.co/datasets/ai4bharat/IndicVoices) (CC BY 4.0; access requires accepting the dataset conditions on Hugging Face). We do not redistribute audio.
 
-- `data/test_ids.csv` lists the 4,041 test utterances (file name and language).
+- `data/train_ids.csv`, `data/validation_ids.csv`, and `data/test_ids.csv` list the 15,713 training, 846 validation, and 4,041 test utterances (file name, language, IndicVoices speaker ID, duration in seconds). No speaker appears in more than one split.
 - `data/split_summary.csv` gives hours and utterance counts per split and language.
 - `data/export_split_ids.py` exports the file IDs of all splits from a local copy of the subset.
+
+To rebuild the subset, download IndicVoices from Hugging Face and select the listed files.
 
 The prediction files in `results/` contain the IndicVoices reference transcripts of the test utterances, shared under CC BY 4.0 with attribution to Javed et al. (2024).
 
